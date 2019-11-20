@@ -203,48 +203,73 @@ ul {
     /*height: 100px;*/
 }
 
-.header_wrap {padding: 15px 0;}
+.header_wrap {
+    padding: 15px 0;
+    height: 150px;
+}
 
-.logo_block { }
+.main_logo_block {
+    text-align: end;
+}
+
+.main_caption_block {
+    margin-top: 32px;
+}
 
 .logo_wrap img { }
 
+/*
 .name_wrap p {
     margin: auto;
     padding-left: 15px;
     font-size: 20px;
 }
+*/
+.hdr_cont_block {
+    height: auto;
+    align-self: center;
+}
 
 .hdr_cont {
-    margin: auto;
+    /*margin: auto;*/
     display: table;
 }
 
-.header_txt, .hdr_cont a {
-    font-family: 'Ubuntu', serif;
+.header_txt {
+    font-family: 'PT Sans Caption', sans-serif;
     font-weight: 400;
-    color: #FFF;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .hdr_cont a:hover {text-decoration: underline;}
 
+.mbn_phone, .mbn_mail, .hdr_adrs, .header_txt { color: #FFFFFF; }
+
+.mbn_phone, .mbn_mail, .hdr_adrs {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .mbn_phone, .mbn_mail {margin-left: 10px;}
 
-.mbn_phone {font-size: 24px;}
+.mbn_phone {
+    font-size: 24px;
+}
 
-.mbn_mail {font-size: 15px;}
+.mbn_mail {font-size: 18px;}
 
 .hdr_adrs {
     font-size: 15px;
     min-width: 200px;
     display: table;
+    line-height: 1.2;
 }
 
 .hdr_adrs span {
     vertical-align: baseline;
     vertical-align: -webkit-baseline-middle;
 }
-
+/*
 @media (max-width: 1163px) {
     .name_wrap p {font-size: 18px;}
 }
@@ -252,20 +277,20 @@ ul {
 @media (max-width: 858px) {
     .name_wrap p {font-size: 16px;}
 }
-
+*/
 @media (max-width: 798px) {
     .mbn_phone {font-size: 23px;}
     .mbn_mail {font-size: 14px;}
-    .name_wrap p {font-size: 15px;}
+    /*.name_wrap p {font-size: 15px;}*/
 }
 
 @media (max-width: 768px) {
     .hdr_adrs, .logo_block {margin: auto;}
-    .name_wrap p {font-size: 16px;}
+    /*.name_wrap p {font-size: 16px;}*/
     .mbn_phone {font-size: 23px;}
     .mbn_mail {font-size: 14px;}
     .hdr_adrs {font-size: 14px;}
-    .logo_wrap img {width: 27px; height: 48px;}
+    /*.logo_wrap img {width: 27px; height: 48px;}*/
 }
 
 @media (max-width: 480px) {
@@ -277,7 +302,7 @@ ul {
         margin-left: 0;
         line-height: 0.5;
     }
-    .hdr_phone {height: 34px;}
+    .hdr_phone {height: 34px; padding-bottom: 4px;}
     .hdr_mail {height: 26px;}
 }
 
